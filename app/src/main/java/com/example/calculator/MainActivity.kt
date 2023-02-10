@@ -26,16 +26,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonCalculateNumbers.setOnClickListener {
-            var firstNumber = binding.numberOne.text.toString().toInt()
-            var secondNumber = binding.numberTwo.text.toString().toInt()
+
+            var firstNumber = binding.numberOne.text.toString().toDouble()
+            var secondNumber = binding.numberTwo.text.toString().toDouble()
             val operation = binding.calculatorSpinner.selectedItem
             var result = 0.0
 
             when (operation){
-                "+" -> result = (firstNumber + secondNumber).toDouble()
-                "-" -> result = (firstNumber - secondNumber).toDouble()
-                "/" -> result = (firstNumber / secondNumber).toDouble()
-                "*" -> result = (firstNumber * secondNumber).toDouble()
+                "+" -> result = (firstNumber + secondNumber)
+                "-" -> result = (firstNumber - secondNumber)
+                "/" -> result = (firstNumber / secondNumber)
+                "*" -> result = (firstNumber * secondNumber)
             }
 
             binding.mathResult.text = "$result"

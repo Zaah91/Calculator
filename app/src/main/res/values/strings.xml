@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="mobile_calculator">Calculator</string>
+    <string name="app_name" />
+    <string-array name="calculatorOperators">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
 </resources>
